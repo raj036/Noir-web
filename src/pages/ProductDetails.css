@@ -1,0 +1,70 @@
+.prod-main {
+  padding: 20px;
+  background-color: black;
+}
+
+.offerings-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 16vw;
+  font-family: sans-serif;
+  color: transparent;
+  text-align: justify;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.85),
+      transparent
+    ) -200%
+    50% / 200% 100% no-repeat;
+  background-clip: text;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+.offerings-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.offering-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.offering-image {
+  width: 400px;
+  margin: 50px;
+  height: 450px;
+  margin-bottom: -10px;
+  
+  
+}
+
+.offering-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .offerings-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .offering-image {
+    width: 100px;
+  }
+}

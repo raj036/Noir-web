@@ -1,0 +1,43 @@
+.disc-wrap {
+  padding: 20px;
+  background-color: black;
+}
+
+.discover-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 16vw;
+  font-family: sans-serif;
+  color: transparent;
+  text-align: justify;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.85), transparent) 
+    -200% 50% / 200% 100% no-repeat;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+.discover-description{
+  margin-left: 35vw;
+  
+  letter-spacing: 1px;
+  font-weight: 400;
+  
+  font-size: 21px;
+}
+
+.noir-description{
+  display: inline;
+  color: red;
+}

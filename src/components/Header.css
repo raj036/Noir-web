@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+  align-items: center;
+}
+
+.back-to-home {
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.747);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out ;
+}
+
+.back-to-home:hover {
+  color: #fff;
+}
+
+.noir-image {
+  height: auto;
+  width: 150px;
+  margin-left: 10%;
+}

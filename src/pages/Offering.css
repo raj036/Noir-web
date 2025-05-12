@@ -1,0 +1,93 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Adding animation to elements */
+
+.offer-wrap {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.offerings-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 16vw;
+  font-family: sans-serif;
+  color: #444444;
+  text-align: justify;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: fadeInUp 1s ease-in-out;
+}
+.content-grid {
+  display: grid;
+  grid-template-areas: "lubricant-image description";
+  grid-template-columns: 2fr 2fr;
+  border: 2px solid rgb(222, 52, 52);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.content-grid > div.description {
+  grid-area: description;
+  border-left: 2px solid rgb(222, 52, 52);
+}
+
+.lubricant-image {
+  /* Adjust size as needed */
+  grid-area: lubricant-image;
+  width: 400px;
+  height: 450px;
+  animation: fadeZoomIn 0.8s ease-in-out;
+}
+
+.lubricant-image.animate {
+  animation: none;
+}
+
+.product-title {
+  padding: 50px;
+  border-bottom: 2px solid rgb(222, 52, 52);
+}
+
+.product-border {
+  border-left: 2px solid rgb(222, 52, 52);
+}
+
+.product-info {
+  padding: 50px;
+  font-size: xx-large;
+  color: gray;
+}
+
+.swipe-arrow {
+  background-color: white;
+  width: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.swipe-arrow:hover {
+  transform: scale(1.1);
+}
