@@ -45,20 +45,20 @@
   display: grid;
   grid-template-areas: "lubricant-image description";
   grid-template-columns: 2fr 2fr;
-  border: 2px solid rgb(222, 52, 52);
+  border: 1px solid rgb(222, 52, 52);
   animation: fadeInUp 1s ease-in-out;
 }
 
 .content-grid > div.description {
   grid-area: description;
-  border-left: 2px solid rgb(222, 52, 52);
+  border-left: 1px solid rgb(222, 52, 52);
 }
 
 .lubricant-image {
   /* Adjust size as needed */
   grid-area: lubricant-image;
-  width: 400px;
-  height: 450px;
+  width: 600px;
+  height: 500px;
   animation: fadeZoomIn 0.8s ease-in-out;
 }
 
@@ -68,7 +68,7 @@
 
 .product-title {
   padding: 50px;
-  border-bottom: 2px solid rgb(222, 52, 52);
+  border-bottom: 1px solid rgb(222, 52, 52);
 }
 
 .product-border {
@@ -77,7 +77,7 @@
 
 .product-info {
   padding: 50px;
-  font-size: xx-large;
+  font-size: 25px;
   color: gray;
 }
 

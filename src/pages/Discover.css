@@ -9,14 +9,24 @@
   width: 100%;
   font-size: 16vw;
   font-family: sans-serif;
-  color: transparent;
-  text-align: justify;
   text-transform: uppercase;
   font-weight: bold;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.85), transparent) 
-    -200% 50% / 200% 100% no-repeat;
+  color: transparent;
+  text-align: center;
+
+  background: radial-gradient(circle at center,
+      rgba(255, 255, 255, 0.85),
+      transparent) -200% 50% / 200% 100% no-repeat;
   background-clip: text;
-  animation: shine 3s linear infinite;
+  -webkit-background-clip: text;
+  animation: shine 4s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.offerings-title.show-text {
+  animation: none;
+  background: none;
+  color: rgba(68, 68, 68, 0.95); 
 }
 
 @keyframes shine {
