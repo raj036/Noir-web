@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import ConnectPage from "./pages/Connect";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
